@@ -1,4 +1,21 @@
-import Image from 'next/image'
+import React from 'react'
+
+const Home = () => {
+  return (
+    <>
+      <div  className="text-center">
+        <h2 className={`mb-3 text-2xl font-semibold`}>Best Selling Product</h2>
+       </div> 
+    </>
+  )
+}
+
+export default Home
+
+
+
+
+/* import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -110,4 +127,4 @@ export default function Home() {
       </div>
     </main>
   )
-}
+} */
