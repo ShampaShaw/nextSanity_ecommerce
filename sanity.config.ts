@@ -7,6 +7,7 @@ import banner from './sanity/schemas/project-product';
 
 
 
+
 const config = defineConfig({
 
     projectId: "v54u8ryq",
@@ -21,7 +22,7 @@ const config = defineConfig({
     
     plugins: [deskTool()],
 
-    schema: { types: [product, banner] }
+    schema: { types: [product,banner] }
 
 })
 

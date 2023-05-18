@@ -1,16 +1,31 @@
 import React from 'react'
+import { getProjects } from '@/sanity/sanity-utils'
+import { client } from '../lib/client'
 
-const Home = () => {
+import { Product, FooterBanner, HeroBanner } from '../components'
+
+export default async function Home() {
+
+  const products = await getProjects()
+  const bannerData = await getProjects()
+  
   return (
-    <>
-      <div  className="text-center">
-        <h2 className={`mb-3 text-2xl font-semibold`}>Best Selling Product</h2>
+
+    <div>
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      <div  className="products-heading">
+        <h2>Best Selling Product</h2>
+        <p>Speakers of many variations</p>
        </div> 
-    </>
+
+       <div className='products-container'>
+          {products.map((product) => product.name)}
+       </div>
+
+       <FooterBanner />
+    </div>
   )
 }
-
-export default Home
 
 
 
