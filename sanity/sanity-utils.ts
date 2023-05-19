@@ -15,9 +15,11 @@ export async function getProjects() {
     })
 
     return client.fetch(
-        groq`*[_type == "banner"]`,
-        groq`*[_type == "product"]`
+        groq`*[_type == "banner" || _type == "product"]`,
+       // groq`*[_type == "product"]`
     )
+
+
     
 }
 

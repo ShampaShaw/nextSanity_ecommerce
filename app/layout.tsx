@@ -1,4 +1,5 @@
 import './globals.css'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { clsx } from 'clsx';
 import { Inter } from 'next/font/google'
 

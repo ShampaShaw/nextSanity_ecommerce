@@ -19,7 +19,7 @@ export default async function Home() {
        </div> 
 
        <div className='products-container'>
-          {products.map((product) => product.name)}
+          {products.map((product) => <Product key={product._id} product={product} />)}
        </div>
 
        <FooterBanner />

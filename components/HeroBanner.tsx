@@ -13,12 +13,12 @@ const HeroBanner = ({ heroBanner }) => {
             className='hero-banner-image'/>
 
             <div>
-              <Link href='/product/ID'>
-                <button type='button'>BUTTON TEXT</button>
+              <Link href={`/product/${heroBanner.product}`}>
+                <button type='button'>{heroBanner.button}</button>
               </Link>
             <div className='desc'>
               <h5>Description</h5>
-              <p>DESCRIPTION</p>
+              <p>{heroBanner.desc}</p>
             </div>  
             </div>
         </div>
